@@ -247,7 +247,7 @@ public class Main {
                 System.out.println("Option invalid!");
             }
         }
-        System.out.println("End");
+        System.out.println("End of program.");
 
 
     }
@@ -285,7 +285,7 @@ public class Main {
 
     public static int meniu() {
         int n;
-        System.out.println("1. Read the tips");
+        System.out.println("1. Read the tips & check if they intersect. If they do, print the points within the intersection");
         System.out.println("0. Exit");
         n = citire("Pick a number!");
         return n;
