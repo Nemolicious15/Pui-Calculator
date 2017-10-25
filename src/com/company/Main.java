@@ -1,6 +1,7 @@
 package com.company;
 
 import java.awt.*;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -24,7 +25,7 @@ public class Main {
 
         System.out.println("Enter the x coordinate for the first tip of the first triangle");
         Scanner scanner = new Scanner(System.in);
-        String readLine = scanner.nextLine();
+        String readLine;
 
 
         while(true) {
@@ -219,11 +220,35 @@ public class Main {
         Triunghi triangle2 = new Triunghi(new Point(secondTipX1, secondTipY1), new Point(secondTipX2, secondTipY2), new Point(secondTipX3, secondTipY3));
 
 
+        ArrayList<Point> intersectionList = calculateIntersectionList(triangle1, triangle2);
+
+        if(intersectionList.isEmpty()){
+            System.out.println("No Intersection between triangles.");
+        }
+        else{
+            System.out.println("Intersection found. Intersection consists of the points: ");
+            for (Point point : intersectionList){
+               System.out.println(point.toString());
+            }
+        }
 
 
 
+    }
 
 
+    public static ArrayList<Point> calculateIntersectionList(Triunghi firstTriangle, Triunghi secondTriangle){
+
+        ArrayList<Point> intersectionList = new ArrayList<Point>();
+
+        for (Point point : firstTriangle.puncte) {
+            if (secondTriangle.puncte.contains(point)) {
+                intersectionList.add(point);
+            }
+        }
+
+
+        return intersectionList;
     }
 
 
