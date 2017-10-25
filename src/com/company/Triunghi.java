@@ -54,6 +54,12 @@ public class Triunghi {
             y1=(int)linie1.calculeazaY((double)i);
             y2=(int)linie2.calculeazaY((double)i);
             //j merge pe vertical
+            if(y1>y2){
+                int aux;
+                aux = y1;
+                y1=y2;
+                y2 = aux;
+            }
             for(int j=y1;j<=y2;j++)
                 puncte.add(new Point(i,j));
         }
@@ -65,6 +71,12 @@ public class Triunghi {
             y1=(int)linie1.calculeazaY((double)i);
             y2=(int)linie2.calculeazaY((double)i);
             //j merge pe vertical
+            if(y1>y2){
+                int aux;
+                aux = y1;
+                y1=y2;
+                y2 = aux;
+            }
             for(int j=y1;j<=y2;j++)
                 puncte.add(new Point(i,j));
         }
