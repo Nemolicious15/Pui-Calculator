@@ -248,7 +248,9 @@ public class Main {
 
         for (Point point : firstTriangle.puncte) {
             if (secondTriangle.puncte.contains(point)) {
-                intersectionList.add(point);
+                if (!(intersectionList.contains(point))) {
+                    intersectionList.add(point);
+                }
             }
         }
 
