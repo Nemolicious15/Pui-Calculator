@@ -17,6 +17,7 @@ public class Triunghi {
         b=n;
         c=p;
         puncte = new ArrayList<Point>();
+        calculeazaPuncte();
     }
 
     public void aranjeazaDupaX(){
