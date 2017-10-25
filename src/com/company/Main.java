@@ -22,28 +22,203 @@ public class Main {
         int secondTipY3;
 
 
-        System.out.println("Enter the x coordinate for the first tip");
+        System.out.println("Enter the x coordinate for the first tip of the first triangle");
         Scanner scanner = new Scanner(System.in);
         String readLine = scanner.nextLine();
 
 
         while(true) {
+            readLine = scanner.nextLine();
             try {
                 firstTipX1 = Integer.parseInt(readLine);
                 break;
             } catch(NumberFormatException e) {
                 System.out.println("Wrong input, enter a number.");
-                System.out.println("Enter the x coordinate for the first tip");
+                System.out.println("Enter the x coordinate for the first tip of the first triangle");
             } catch(NullPointerException e) {
                 System.out.println("Wrong input, enter a number.");
-                System.out.println("Enter the x coordinate for the first tip");
+                System.out.println("Enter the x coordinate for the first tip of the first triangle");
             }
         }
 
-        System.out.println("Your username is " + username);
+        System.out.println("Enter the y coordinate for the first tip of the first triangle");
+        while(true) {
 
-        Triunghi triangle1 = new Triunghi(new Point(1, 1), new Point(2, 2), new Point(3, 3));
-        Triunghi triangle2 = new Triunghi(new Point(1, 1), new Point(2, 2), new Point(3, 3));
+            readLine = scanner.nextLine();
+            try {
+                firstTipY1 = Integer.parseInt(readLine);
+                break;
+            } catch(NumberFormatException e) {
+                System.out.println("Wrong input, enter a number.");
+                System.out.println("Enter the y coordinate for the first tip of the first triangle");
+            } catch(NullPointerException e) {
+                System.out.println("Wrong input, enter a number.");
+                System.out.println("Enter the y coordinate for the first tip of the first triangle");
+            }
+        }
+
+        System.out.println("Enter the x coordinate for the second tip of the first triangle");
+        while(true) {
+
+            readLine = scanner.nextLine();
+            try {
+                firstTipX2 = Integer.parseInt(readLine);
+                break;
+            } catch(NumberFormatException e) {
+                System.out.println("Wrong input, enter a number.");
+                System.out.println("Enter the x coordinate for the second tip of the first triangle");
+            } catch(NullPointerException e) {
+                System.out.println("Wrong input, enter a number.");
+                System.out.println("Enter the x coordinate for the second tip of the first triangle");
+            }
+        }
+
+        System.out.println("Enter the y coordinate for the second tip of the first triangle");
+        while(true) {
+            readLine = scanner.nextLine();
+            try {
+                firstTipY2 = Integer.parseInt(readLine);
+                break;
+            } catch(NumberFormatException e) {
+                System.out.println("Wrong input, enter a number.");
+                System.out.println("Enter the y coordinate for the second tip of the first triangle");
+            } catch(NullPointerException e) {
+                System.out.println("Wrong input, enter a number.");
+                System.out.println("Enter the y coordinate for the second tip of the first triangle");
+            }
+        }
+
+        System.out.println("Enter the x coordinate for the third tip of the first triangle");
+        while(true) {
+            readLine = scanner.nextLine();
+            try {
+                firstTipX3 = Integer.parseInt(readLine);
+                break;
+            } catch(NumberFormatException e) {
+                System.out.println("Wrong input, enter a number.");
+                System.out.println("Enter the x coordinate for the third tip of the first triangle");
+            } catch(NullPointerException e) {
+                System.out.println("Wrong input, enter a number.");
+                System.out.println("Enter the x coordinate for the third tip of the first triangle");
+            }
+        }
+
+        System.out.println("Enter the y coordinate for the third tip of the first triangle");
+        while(true) {
+            readLine = scanner.nextLine();
+            try {
+                firstTipY3 = Integer.parseInt(readLine);
+                break;
+            } catch(NumberFormatException e) {
+                System.out.println("Wrong input, enter a number.");
+                System.out.println("Enter the y coordinate for the third tip of the first triangle");
+            } catch(NullPointerException e) {
+                System.out.println("Wrong input, enter a number.");
+                System.out.println("Enter the y coordinate for the third tip of the first triangle");
+            }
+        }
+
+        System.out.println("Enter the x coordinate for the first tip of the second triangle");
+        while(true) {
+            readLine = scanner.nextLine();
+            try {
+                secondTipX1 = Integer.parseInt(readLine);
+                break;
+            } catch(NumberFormatException e) {
+                System.out.println("Wrong input, enter a number.");
+                System.out.println("Enter the x coordinate for the first tip of the second triangle");
+            } catch(NullPointerException e) {
+                System.out.println("Wrong input, enter a number.");
+                System.out.println("Enter the x coordinate for the first tip of the second triangle");
+            }
+        }
+
+        System.out.println("Enter the y coordinate for the first tip of the second triangle");
+        while(true) {
+            readLine = scanner.nextLine();
+            try {
+                secondTipY1 = Integer.parseInt(readLine);
+                break;
+            } catch(NumberFormatException e) {
+                System.out.println("Wrong input, enter a number.");
+                System.out.println("Enter the y coordinate for the first tip of the second triangle");
+            } catch(NullPointerException e) {
+                System.out.println("Wrong input, enter a number.");
+                System.out.println("Enter the y coordinate for the first tip of the second triangle");
+            }
+        }
+
+        System.out.println("Enter the x coordinate for the second tip of the second triangle");
+        while(true) {
+            readLine = scanner.nextLine();
+            try {
+                secondTipX2 = Integer.parseInt(readLine);
+                break;
+            } catch(NumberFormatException e) {
+                System.out.println("Wrong input, enter a number.");
+                System.out.println("Enter the x coordinate for the second tip of the second triangle");
+            } catch(NullPointerException e) {
+                System.out.println("Wrong input, enter a number.");
+                System.out.println("Enter the x coordinate for the second tip of the second triangle");
+            }
+        }
+
+        System.out.println("Enter the y coordinate for the second tip of the second triangle");
+        while(true) {
+            readLine = scanner.nextLine();
+            try {
+                secondTipY2 = Integer.parseInt(readLine);
+                break;
+            } catch(NumberFormatException e) {
+                System.out.println("Wrong input, enter a number.");
+                System.out.println("Enter the y coordinate for the second tip of the second triangle");
+            } catch(NullPointerException e) {
+                System.out.println("Wrong input, enter a number.");
+                System.out.println("Enter the y coordinate for the second tip of the second triangle");
+            }
+        }
+
+        System.out.println("Enter the x coordinate for the third tip of the second triangle");
+        while(true) {
+            readLine = scanner.nextLine();
+            try {
+                secondTipX3 = Integer.parseInt(readLine);
+                break;
+            } catch(NumberFormatException e) {
+                System.out.println("Wrong input, enter a number.");
+                System.out.println("Enter the x coordinate for the third tip of the second triangle");
+            } catch(NullPointerException e) {
+                System.out.println("Wrong input, enter a number.");
+                System.out.println("Enter the x coordinate for the third tip of the second triangle");
+            }
+        }
+
+        System.out.println("Enter the y coordinate for the third tip of the second triangle");
+        while(true) {
+            readLine = scanner.nextLine();
+            try {
+                secondTipY3 = Integer.parseInt(readLine);
+                break;
+            } catch(NumberFormatException e) {
+                System.out.println("Wrong input, enter a number.");
+                System.out.println("Enter the y coordinate for the third tip of the second triangle");
+            } catch(NullPointerException e) {
+                System.out.println("Wrong input, enter a number.");
+                System.out.println("Enter the y coordinate for the third tip of the second triangle");
+            }
+        }
+
+
+
+
+
+
+
+
+        Triunghi triangle1 = new Triunghi(new Point(firstTipX1, firstTipY1), new Point(firstTipX2, firstTipY2), new Point(firstTipX3, firstTipY3));
+        Triunghi triangle2 = new Triunghi(new Point(secondTipX1, secondTipY1), new Point(secondTipX2, secondTipY2), new Point(secondTipX3, secondTipY3));
+
+
 
 
 
