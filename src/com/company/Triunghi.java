@@ -22,17 +22,17 @@ public class Triunghi {
 
     public void aranjeazaDupaX(){
         int aux;
-        if(a.x<b.x){
+        if(a.x>b.x){
             aux=a.x;
             a.x=b.x;
             b.x=aux;
         }
-        if(a.x<c.x){
+        if(a.x>c.x){
             aux=a.x;
             a.x=c.x;
             c.x=aux;
         }
-        if(b.x<c.x){
+        if(b.x>c.x){
             aux=b.x;
             b.x=c.x;
             c.x=aux;
@@ -58,6 +58,8 @@ public class Triunghi {
                 puncte.add(new Point(i,j));
         }
         //trecem la a doua jumatate
+        x1= b.x;
+        x2 = c.x;
         linie2 = new Linie(b,c);
         for(int i=x1;i<=x2;i++){
             y1=(int)linie1.calculeazaY((double)i);

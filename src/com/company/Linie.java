@@ -15,7 +15,7 @@ public class Linie {
     Linie(Point punct1, Point punct2){
         x1=punct1.x;
         y1=punct1.y;
-        m=(punct2.y-punct1.y)/(punct2.y-punct1.x);
+        m=(punct2.y-punct1.y)/(punct2.x-punct1.x);
     }
 
     double calculeazaY(double x){

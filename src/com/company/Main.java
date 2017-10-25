@@ -223,7 +223,7 @@ public class Main {
         ArrayList<Point> intersectionList = calculateIntersectionList(triangle1, triangle2);
 
         if(intersectionList.isEmpty()){
-            System.out.println("No Intersection between triangles.");
+            System.out.println("No intersections between the chosen triangles.");
         }
         else{
             System.out.println("Intersection found. Intersection consists of the points: ");
