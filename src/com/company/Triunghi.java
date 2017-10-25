@@ -4,7 +4,7 @@ import java.awt.*;
 import java.util.ArrayList;
 
 /**
- * Created by Nightingale on 2017-10-25.
+ * Created by Mara Costin on 2017-10-25.
  */
 public class Triunghi {
 

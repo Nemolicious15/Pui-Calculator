@@ -2,7 +2,7 @@ package com.company;
 import java.awt.*;
 
 /**
- * Created by Nightingale on 2017-10-25.
+ * Created by Mara Costin on 2017-10-25.
  */
 
 

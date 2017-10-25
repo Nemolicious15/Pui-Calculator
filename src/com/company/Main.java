@@ -4,6 +4,11 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+
+/**
+ * Created by Mara Costin on 2017-10-25.
+ */
+
 public class Main {
 
     public static void main(String[] args) {
